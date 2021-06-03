@@ -1,0 +1,154 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local BloxFruit1 = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local BloxFruit2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local KingPiece = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ShindoLife = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local open = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(126, 120, 117)
+main.Position = UDim2.new(0.628756702, 0, 0.485768467, 0)
+main.Size = UDim2.new(0, 249, 0, 232)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+UICorner.Parent = main
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.081896551, 0)
+TextLabel.Size = UDim2.new(0, 249, 0, 35)
+TextLabel.Font = Enum.Font.SpecialElite
+TextLabel.Text = "ABH Hub (ALPHA)"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+TextLabel.TextWrapped = true
+
+BloxFruit1.Name = "BloxFruit1"
+BloxFruit1.Parent = main
+BloxFruit1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BloxFruit1.Position = UDim2.new(0.0281124506, 0, 0.336206913, 0)
+BloxFruit1.Size = UDim2.new(0, 110, 0, 50)
+BloxFruit1.Font = Enum.Font.Jura
+BloxFruit1.Text = "Blox Fruit - Evil"
+BloxFruit1.TextColor3 = Color3.fromRGB(0, 0, 0)
+BloxFruit1.TextSize = 17.000
+BloxFruit1.TextWrapped = true
+
+UICorner_2.Parent = BloxFruit1
+BloxFruit1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Natthawat69/EvilHub-FREE/main/Script.lua"))()
+end)
+
+BloxFruit2.Name = "BloxFruit2"
+BloxFruit2.Parent = main
+BloxFruit2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BloxFruit2.Position = UDim2.new(0.534136534, 0, 0.336206913, 0)
+BloxFruit2.Size = UDim2.new(0, 110, 0, 50)
+BloxFruit2.Font = Enum.Font.Jura
+BloxFruit2.Text = "Blox Fruit - BK"
+BloxFruit2.TextColor3 = Color3.fromRGB(0, 0, 0)
+BloxFruit2.TextSize = 17.000
+
+UICorner_3.Parent = BloxFruit2
+BloxFruit2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/koonpeatch/PeatEX/master/BKHAX/BloxFruits"),true))() 
+end)
+
+KingPiece.Name = "KingPiece"
+KingPiece.Parent = main
+KingPiece.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KingPiece.Position = UDim2.new(0.534136534, 0, 0.668103456, 0)
+KingPiece.Size = UDim2.new(0, 110, 0, 50)
+KingPiece.Font = Enum.Font.Jura
+KingPiece.Text = "King Piece"
+KingPiece.TextColor3 = Color3.fromRGB(0, 0, 0)
+KingPiece.TextSize = 20.000
+
+UICorner_4.Parent = KingPiece
+KingPiece.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))()
+end)
+
+ShindoLife.Name = "ShindoLife"
+ShindoLife.Parent = main
+ShindoLife.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ShindoLife.Position = UDim2.new(0.0281124413, 0, 0.668103456, 0)
+ShindoLife.Size = UDim2.new(0, 110, 0, 50)
+ShindoLife.Font = Enum.Font.Jura
+ShindoLife.Text = "Shindo Life"
+ShindoLife.TextColor3 = Color3.fromRGB(0, 0, 0)
+ShindoLife.TextSize = 20.000
+
+UICorner_5.Parent = ShindoLife
+ShindoLife.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/6Wumpus6/SpyHub/main/ShindoLife", true))()
+end)
+
+Close.Name = "Close"
+Close.Parent = main
+Close.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Close.Position = UDim2.new(0.923694789, 0, -0.0603448339, 0)
+Close.Size = UDim2.new(0, 33, 0, 33)
+Close.Font = Enum.Font.SourceSansBold
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(4, 8)
+UICorner_6.Parent = Close
+Close.MouseButton1Down:connect(function()
+	main.Visible = false
+	open.Visible = true
+end)
+
+open.Name = "open"
+open.Parent = ScreenGui
+open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+open.Position = UDim2.new(0.0221674889, 0, 0.576850057, 0)
+open.Size = UDim2.new(0, 100, 0, 30)
+
+UICorner_7.Parent = open
+open.Active = true
+open.Draggable = true
+
+TextButton.Parent = open
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 230, 0)
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.SciFi
+TextButton.Text = "OPEN"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UICorner_8.Parent = TextButton
+TextButton.MouseButton1Down:connect(function()
+	open.Visible = false
+	main.Visible = true
+end)
